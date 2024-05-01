@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cep-project2
+  annotations:
+    contact: Elmer Richard C. Lakan-Ilaw
+	description: PG-DO Course-end Project 2

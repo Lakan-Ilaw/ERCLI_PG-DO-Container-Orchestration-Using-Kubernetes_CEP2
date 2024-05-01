@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: cep2-user4-cluster
+  cluster:
+    certificate-authority: /home/labsuser/.kube/ca.crt
+    server: https://172.31.1.188:6443
+contexts:
+- name: cep2-user4-context
+  context:
+    cluster: cep2-user4-cluster
+    user: user4
+    namespace: cep-project2
+current-context: cep2-user4-context
+users:
+- name: user4
+  user:
+    client-certificate: /home/labsuser/.kube/user4.crt
+    client-key: /home/labsuser/.kube/user4.key
